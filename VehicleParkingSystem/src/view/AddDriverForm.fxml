@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="800.0" style="-fx-background-color: #bdc3c7;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddDriverFormController">
+   <children>
+      <Label prefHeight="35.0" prefWidth="800.0" style="-fx-background-color: #7f8c8d;" text=" Add Driver">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <Label layoutX="80.0" layoutY="90.0" style="-fx-background-color: #bdc3c7;" text="Driver Name">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="181.0" layoutY="131.0" style="-fx-background-color: #bdc3c7;" text="NIC">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="174.0" style="-fx-background-color: #bdc3c7;" text="Driving License No">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="131.0" layoutY="219.0" style="-fx-background-color: #bdc3c7;" text="Address">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="97.0" layoutY="281.0" style="-fx-background-color: #bdc3c7;" text="Contact No">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtName" layoutX="239.0" layoutY="91.0" onAction="#moveNIC" prefHeight="24.0" prefWidth="544.0" style="-fx-background-color: #7f8c8d;" />
+      <TextField fx:id="txtNIC" layoutX="239.0" layoutY="132.0" onAction="#moveDrivingLicenseNo" prefHeight="24.0" prefWidth="544.0" style="-fx-background-color: #7f8c8d;" />
+      <TextField fx:id="txtDrivingLicenseNo" layoutX="239.0" layoutY="175.0" onAction="#moveAddress" prefHeight="24.0" prefWidth="544.0" style="-fx-background-color: #7f8c8d;" />
+      <TextField fx:id="txtAddress" layoutX="239.0" layoutY="220.0" onAction="#moveContactNo" prefHeight="55.0" prefWidth="544.0" style="-fx-background-color: #7f8c8d;" />
+      <TextField fx:id="txtContactNo" layoutX="239.0" layoutY="282.0" prefHeight="24.0" prefWidth="544.0" style="-fx-background-color: #7f8c8d;" />
+      <Button fx:id="btnAddDriver" layoutX="628.0" layoutY="343.0" mnemonicParsing="false" onAction="#btnAddDriverOnAction" style="-fx-background-radius: 10; -fx-background-color: #3498db;" text="Add Driver">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

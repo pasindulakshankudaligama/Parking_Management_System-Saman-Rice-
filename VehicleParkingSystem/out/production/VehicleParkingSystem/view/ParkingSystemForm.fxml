@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="parkingSystemContext" prefHeight="720.0" prefWidth="1000.0" style="-fx-background-color: #bdc3c7;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ParkingSystemFormController">
+   <children>
+      <Label prefHeight="63.0" prefWidth="1000.0" style="-fx-background-color: #7f8c8d;" text="Parking System">
+         <font>
+            <Font size="38.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="101.0" text="Select Vehicle">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="43.0" layoutY="186.0" text="Vehicle Type">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="88.0" layoutY="263.0" text="Driver">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbSelectVehicle" layoutX="169.0" layoutY="100.0" onAction="#cmbVehicleOnAction" prefHeight="24.0" prefWidth="188.0" style="-fx-background-color: #7f8c8d;" />
+      <ComboBox fx:id="cmbDriver" layoutX="169.0" layoutY="262.0" prefHeight="24.0" prefWidth="188.0" style="-fx-background-color: #7f8c8d;" />
+      <AnchorPane layoutX="24.0" layoutY="360.0" prefHeight="315.0" prefWidth="400.0" style="-fx-background-color: #7f8c8d; -fx-background-radius: 50;">
+         <children>
+            <Label layoutX="33.0" layoutY="34.0" style="-fx-background-color: #7f8c8d; -fx-background-radius: 50;" text="Your Parking Slot Number">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label fx:id="parkingSlotNumConText" alignment="CENTER" layoutX="90.0" layoutY="126.0" prefHeight="64.0" prefWidth="198.0">
+               <font>
+                  <Font size="52.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="439.0" layoutY="97.0" prefHeight="200.0" prefWidth="515.0" style="-fx-background-color: #7f8c8d; -fx-background-radius: 30;">
+         <children>
+            <Label fx:id="lblOnDate" layoutX="30.0" layoutY="27.0" prefHeight="30.0" prefWidth="134.0" text="15/July/2021">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblOnTime" layoutX="232.0" layoutY="85.0" prefHeight="47.0" prefWidth="213.0" text="08:35 AM">
+               <font>
+                  <Font size="39.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <Button fx:id="btnParkVehicleContext" layoutX="446.0" layoutY="372.0" mnemonicParsing="false" onAction="#parkVehicleOnAction" prefHeight="52.0" prefWidth="515.0" style="-fx-background-radius: 10; -fx-background-color: #1abc9c;" text="Park Vehicle">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnOnDeliveryContext" layoutX="446.0" layoutY="466.0" mnemonicParsing="false" onAction="#onDeliveryShiftOnAction" prefHeight="52.0" prefWidth="515.0" style="-fx-background-radius: 10; -fx-background-color: #1abc9c;" text="On Dilivery Shift">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Button>
+      <Button layoutX="446.0" layoutY="623.0" mnemonicParsing="false" onAction="#openLogInFormOnAction" prefHeight="52.0" prefWidth="515.0" style="-fx-background-radius: 10; -fx-background-color: #3498db;" text="Management Log In">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblVehicleTypeContext" alignment="CENTER" layoutX="169.0" layoutY="185.0" prefHeight="24.0" prefWidth="188.0" style="-fx-background-color: #7f8c8d;" />
+   </children>
+</AnchorPane>
